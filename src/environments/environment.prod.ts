@@ -5,9 +5,9 @@ export const environment = {
     host: '127.0.0.1',
     port: '3000',
     endpoints: {
-      employeAleatoire: '/api/employe/random',
-      tousLesEmployes: '/api/employe',
-      unEmploye: '/api/employe/:id'
+      musiqueAleatoire: '/musics/random',
+      toutesLesMusiques: '/musics',
+      uneMusique: '/musics/:id'
     }
   }
 };
