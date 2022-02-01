@@ -2,7 +2,7 @@
   "name": "angular-app",
   "version": "0.0.0",
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "npm run client",
     "server": "node _server/server.js",
     "ng": "ng",
     "client": "ng serve",

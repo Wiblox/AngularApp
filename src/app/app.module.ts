@@ -23,6 +23,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatInputModule} from "@angular/material/input";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {ListPersonnelComponent} from "./list-personnel/list-personnel.component";
+import { FormulaireComponent } from './partage/formulaire/formulaire.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {ListPersonnelComponent} from "./list-personnel/list-personnel.component"
     CarteComponent,
     DrawerComponent,
     HeaderComponent,
-    ListPersonnelComponent
+    ListPersonnelComponent,
+    FormulaireComponent
   ],
   imports: [
     BrowserModule,
