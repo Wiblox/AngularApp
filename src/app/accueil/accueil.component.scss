@@ -1,12 +1,22 @@
-button{
+button {
   float: right;
   position: fixed;
   bottom: 1em;
   right: 1em;
 }
 
-section{
+section {
   display: flex;
   justify-content: center;
   align-content: center;
+}
+
+.example-card {
+  max-width: 400px;
+}
+.main-div {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

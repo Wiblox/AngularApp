@@ -1,1 +1,39 @@
-<p>List-personnel work</p>
+<section [ngSwitch]="view">
+  <section *ngSwitchCase="'card'">
+    <carte
+      [employe]="employe"
+      (personDelete)="delete($event)"
+      (personUpdate)="update($event)"
+      *ngFor="let employe of personnel"
+    ></carte>
+  </section>
+
+  <section *ngSwitchCase="'list'">
+    <mat-list>
+      <mat-list-item
+        *ngFor="let employe of personnel"
+        class="mat-whiteframe-2dp mat-card"
+      >
+        <img mat-list-avatar alt="Avatar de l'employé" />
+        <h3 mat-line>
+          <span badgeChef></span> {{ employe.prenom }} {{ employe.nom }}
+        </h3>
+        <p mat-line>
+          <span> {{ employe.email }} </span> —
+          <span>{{ employe.telephone }} </span>
+        </p>
+      </mat-list-item>
+    </mat-list>
+  </section>
+</section>
+
+<section class="buttons-fab" *ngIf="dialogStatus == 'inactive'">
+  <button (click)="showDialog()" mat-fab color="accent" class="button-add">
+    <em class="material-icons">add</em>
+  </button>
+
+  <button (click)="switchView()" mat-fab color="warn">
+    <em class="material-icons" *ngIf="view === 'card'">list</em>
+    <em class="material-icons" *ngIf="view === 'list'">view_stream</em>
+  </button>
+</section>

@@ -1,11 +1,12 @@
-<section *ngIf="employe; else noEmploye">
-  <carte [employe]="employe" (personDelete)="random()"></carte>
-</section>
-
-<ng-template #noEmploye>
-  <span>Aucuns employés actuellement en base</span>
-</ng-template>
-
-<button mat-fab color="primary" (click)="random()">
-  <mat-icon>refresh</mat-icon>
-</button>
+<div class="main-div">
+  <mat-card class="example-card">
+    <mat-card-title>
+      <h1>
+        <em class="bi bi-music"></em>
+        Musique
+      </h1>
+    </mat-card-title>
+    Nous avons actuellement x musiques sur notre base de données<br />
+    <mat-card-subtitle>65 Musiques</mat-card-subtitle></mat-card
+  >
+</div>

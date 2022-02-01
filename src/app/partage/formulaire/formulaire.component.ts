@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-formulaire',
+  selector: 'formulaire',
   templateUrl: './formulaire.component.html',
   styleUrls: ['./formulaire.component.scss']
 })
 export class FormulaireComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
+    //COMMENTAIRE
   }
 
+  ngOnInit() {
+    //VIDE
+  }
 }
